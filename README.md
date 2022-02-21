@@ -1,2 +1,2 @@
-# Programa-o-para-Internet-I
+# Programação-para-Internet-I
 Repositório da disciplina Programação para Internet I
