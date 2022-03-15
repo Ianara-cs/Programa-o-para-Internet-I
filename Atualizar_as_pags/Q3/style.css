@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+
+*{
+    margin: 0;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(248, 248, 248);
+}
+
+header{
+    width: 100%;
+    position: fixed;
+    background-color: white;
+    border-bottom: 1px solid #ccc;
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    padding: .8rem 13rem;
+}
+
+.logo h2{
+    font-family: 'Satisfy', cursive;
+}
+
+.pesquisa{
+    padding-left: 12rem;
+}
+
+.pesquisa input{
+    background-color: #ccc;
+    border: none;
+    width: 16rem;
+    height: 2.1rem;
+    border-radius: 5px;
+    font-size: 15px;
+}
+
+nav ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 5px;
+}
+
+
+nav ul li a{
+    background-color: black;
+    padding: .4rem 1rem;
+    border-radius: 100%;
+    margin-left: 1rem;
+}
+
+.container-1{
+    padding: 5.5rem 5rem 2.9rem 5rem;
+    border-bottom: 1px solid #ccc;
+    margin: 0 12rem;
+
+}
+
+.container-1 .profile{
+    display: flex;
+    align-content: center;
+    
+}
+
+.container-1 .profile img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+.container-1 .profile .info{
+    padding: .2rem 1rem;
+    margin-left: 5.2rem;
+    color: rgb(51, 51, 51);
+    margin-right: 2rem;
+    width: 70%;
+    
+}
+
+.container-1 .profile .info .info-1{
+    display: flex;
+    font-size: 26px;
+    align-items: center;
+}
+
+.container-1 .profile .info .info-1 .box{
+    padding-top: 5px;
+    padding-right: 1.7rem;
+}
+
+.container-1 .profile .info .info-1 #button{
+    border: 1px solid #ccc;
+    height: 30px;
+    font-size: 14px;
+    border-radius: 5px;
+}
+
+
+.container-1 .profile .info .info-1 #button a{
+    color: rgb(49, 48, 48);
+    padding: 10px;
+}
+
+
+.container-1 .profile .info .info-1 #config{
+    background-color: rgb(21, 22, 22);
+    padding: .4rem .5rem;
+    border-radius: 100%;
+    margin-left: 0.5rem;
+    height: 28px;
+    width: 30px;
+}
+
+.container-1 .profile .info  .info-2{
+    display: flex;
+    margin-top: .8rem;
+    padding-top: 1rem;
+
+    
+}
+
+.container-1 .profile .info  .info-2 .about-00{
+    padding-left: 3rem;
+}
+
+.container-1 .profile .info  .info-2 .about-00 a{
+    color: black;
+}
+
+.container-1 .profile .info  .info-2  p{
+    font-size: 16px;
+}
+
+.container-1 .profile .info .name{
+    margin-top: 1.3rem;
+}
+
+.container-2{
+    padding: 1.3rem 5rem 1rem 5rem;
+    margin: 0 12rem;
+    
+}
+
+.container-2 .text{
+    display: flex;
+    justify-items: center;
+    margin-left: 13rem;
+}
+.container-2 .text p{
+   text-transform: uppercase;
+   font-size: small;
+}
+.container-2 .text .p-1{
+    padding-left: 5rem;
+}
+
+.container-3{
+    margin: 0 12rem;
+}
+
+.container-3 img{
+    width: 32%;
+    height: 32.3%;
+
+}
