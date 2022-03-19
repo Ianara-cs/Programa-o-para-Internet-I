@@ -1,0 +1,47 @@
+
+header, footer{
+    background-color: rgb(187, 231, 187);
+}
+
+
+header h1{
+    padding-bottom: 1rem;
+    font-size: 2rem;
+}
+
+main {
+    padding-top: .5rem;
+}
+
+article{
+    padding-top: 1rem;
+}
+
+nav{
+    padding-top: 1rem;
+}
+
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+aside{
+    background-color: rgb(235, 231, 231);
+}
+nav{
+    background-color: rgb(189, 206, 189);
+}
+
+footer{
+    text-align: center;
+}
+
+footer p{
+    padding-top: 1rem;
+}
+
