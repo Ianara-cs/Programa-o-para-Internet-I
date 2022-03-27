@@ -1,0 +1,93 @@
+@import
+url('http://fonts.googleapis.com/css?family=Crimson+Text:400,400italic,600');
+@import
+url('http://fonts.googleapis.com/css?family=Open+Sans+Condensed:700');
+
+
+
+body {
+    font-family: "Crimson Text","Times New Roman", serif; 
+    background-color: #F2FFFC;
+    font-size: 120%;
+    line-height: 1.5;
+}
+
+p{
+    text-align: justify;
+    font-size: 120%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+h2, h3, h4, h5{
+    font-size: 30px;
+}
+
+h1, h2 {
+    font-family: "Open Sans Condensed", "Arial",sans-serif;
+}
+
+header h1{
+    background-color: #7e1c45;
+    text-align: center;
+    color: white;
+    padding: 25px;
+    border-bottom: 10px solid black;
+    font-size: 60px;
+}
+
+
+a{
+    font-family: "Open Sans Condensed";
+}
+
+main{
+    width: 60%;
+    margin: auto;
+    padding: 30px 0;
+}
+
+main a{
+    color: #851944;
+}
+
+blockquote, aside, footer{
+    padding: 20px;
+}
+
+
+blockquote{
+    background-color: #D9E5E3;
+    border: solid 10px #C2CCCA;
+    width: 250px;
+    box-sizing: border-box;
+    margin: 20px 40px 20px 40px;
+}
+
+aside{
+    background-color: #3C1D3D;
+    color: #F2FFFC;
+}
+aside h1{
+    background-color: #3C1D3D;
+    text-align: left;
+    font-size: 30px;
+    margin-bottom: 25px;
+}
+
+aside a {
+    color: inherit;
+}
+
+footer{
+    background-color: black;
+    color: #F2FFFC;
+}
+
+strong{
+    font-weight: bolder;
+}
+
+em{
+    font-style: italic;
+}
