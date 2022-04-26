@@ -1,0 +1,381 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    border: none;
+}
+
+body{
+    overflow-x: hidden;
+    font-family: 'Poppins', sans-serif;
+    background-color: #EEE;
+    
+}
+
+/*GENERAL STYLE*/
+.container{
+    width: 78%;
+    margin: 0 auto;
+}
+
+.profile-img{
+    width: 2.7rem;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+#profile{
+    display: block;
+    width: 100%;
+}
+
+.btn{
+    display: inline-block;
+    padding: 0.6rem 1rem;
+    font-weight: 500;
+    border-radius: 1rem;
+    cursor: pointer;
+    transition: all 300ms ease;
+    font-size: 0.8rem;
+    
+}
+
+.btn:hover {
+    opacity: 0.8;
+}
+
+.btn-primary{
+    background-color: blue;
+    color: white;
+}
+
+nav{
+    width: 100%;
+    padding: 0.7rem 0;
+    position: fixed;
+    top: 0;
+    z-index: 10;
+    background-color: white;
+    border-bottom: #ccc 1px solid;
+}
+
+nav .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav .search-bar{
+    padding: 0.6rem 1rem;
+    border-radius: 10px;
+    background-color: #EEE;
+}
+
+nav .search-bar input[type="search"] {
+    background-color: transparent;
+    width: 30vw;
+    margin-left: 1rem;
+    font-size: 0.9rem;
+}
+
+main{
+    position: relative;
+    top: 5.4rem;
+}
+
+main .container{
+    display: flex;
+    gap: 2rem;
+    position: relative;
+}
+
+main .container .left{
+    height: max-content;
+    position: fixed;
+    width: 200px;
+}
+
+main .container .left a{
+    color: rgb(37, 35, 35);
+}
+
+main .container .left .perfil {
+    padding: 1rem;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    column-gap: 1rem;
+    width: 100%;
+    border-radius: 1rem;
+}
+
+
+main .container .left .side-bar{
+    margin-top: 1rem;
+    border-radius: .5rem;
+    color: black;
+    background-color: white;
+}
+
+.left .side-bar .menu-item{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 4rem;
+    cursor: pointer;
+    transition: all 300ms ease;
+    position: relative;
+}
+
+.left .side-bar .menu-item:hover{
+    background-color: #EEE;
+    border-left: 2px solid blue;
+}
+
+.left .side-bar i{
+    font-size: 1.2rem;
+    margin-left: 1.7rem;
+    margin-right: 1rem;
+    position: relative;
+}
+
+.left .btn{
+    margin-top: 1rem;
+}
+
+.middle{
+    margin-left: 15rem;
+    
+}
+
+.middle .stories{
+    display: flex;
+    justify-content: space-between;
+    height: 12rem;
+    gap: .5rem;
+}
+
+.middle .stories .story{
+    padding: 1rem;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    font-size: 0.75rem;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.middle .stories .story .name{
+    text-shadow: black 2px 2px 8px;
+}
+
+.middle .stories .story:nth-child(1){
+    background: url(./images/story-1.jpg)
+    no-repeat center center/cover ;   
+}
+
+.middle .stories .story:nth-child(2){
+    background: url(./images/story-2.jpg)
+    no-repeat center center/cover ;   
+}
+
+.middle .stories .story:nth-child(3){
+    background: url(./images/story-3.jpg)
+    no-repeat center center/cover ;   
+}
+
+.middle .stories .story:nth-child(4){
+    background: url(./images/story-4.jpg)
+    no-repeat center center/cover ;   
+}
+
+.middle .stories .profile-img{
+    width: 2rem;
+    height: 2rem;
+    align-self: start;
+    border: 3px solid blue;
+}
+
+.middle .feeds .feed{
+    background-color: white;
+    border: 1px solid #ccc;
+    margin: 1.5rem 0;
+    width: 50vw;
+    font-size: 0.85rem;
+    line-height: 1.5;
+}
+
+.middle .feed .head{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+.middle .feed .user{
+    display: flex;
+    gap: 1rem;
+}
+
+.middle .feed .action-buttons{
+    padding: .5rem 1rem;
+    margin-bottom: .5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.4rem;
+}
+
+.middle .feed .action-buttons span{
+    margin-right: 1rem;
+}
+
+.middle .feed .liked-by{
+    display: flex;
+    
+}
+
+.middle .feed .liked-by span{
+    display: block;
+    width: 1%;
+    
+}
+
+.img-liked{
+    display: block;
+    width: 1.4rem;
+    height: 1.4rem;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 2px solid whitesmoke;
+}
+
+.middle .feed .liked-by p{
+    margin-left: 1rem;
+}
+
+.space{
+    margin-left: 5px;
+    margin-top: 3px;
+}
+
+.middle .feed .coments{
+    color: rgb(190, 187, 187);
+}
+
+.middle .feed .comentario{
+    padding: .2rem;
+    border-top: 1px solid #ccc;
+}
+.middle .feed .comentario form{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.middle .feed .comentario form input[type="text"]{
+    font-size: .8rem;
+    width: 80%;
+    border-radius: 10px;
+    padding: .8rem;
+    border-left: 1px solid #ccc
+}
+
+.middle .feed .comentario form input[type="submit"]{
+    background-color: transparent;
+    color: blue;
+    font-size: .9rem;
+    margin-right: 8%;
+    font-weight: 700;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+    
+}
+
+.middle .feeds .feed .foto .img-feed{
+    max-width: 50vw;
+}
+
+footer{
+    display: block;
+    text-transform: uppercase;
+    margin-left: 10%;
+    position: fixed;
+    bottom: 20px;
+    color: rgb(153, 150, 150);
+    font-size: .8rem;
+}
+
+
+@media screen and (max-width: 700px){
+    .container{
+        width: 90%;
+    }
+    main .container{
+        display: block;
+        position: relative;
+        width: 100%;
+        margin-bottom: 160px;
+    }
+
+    .left .side-bar{
+        display: flex;
+        justify-content: space-between;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        border: 1px solid black;
+    }
+    
+    main .container .left .perfil{
+        top: 3.5rem;
+        position: fixed;
+        border: #ccc solid 1px;
+    }
+
+    main .container .left .perfil .profile-img{
+        display: none;
+    }
+
+    .left .side-bar .menu-item{
+        width: 100%;
+    }
+
+    .left .side-bar .menu-item:hover{
+        border-bottom: 2px solid blue;
+        border-left: none;
+    }
+
+    .middle{
+        margin-top: 4.5rem;
+        margin-left: 0%;
+    }
+    .middle .feeds .feed{ 
+        width: 100%;
+    }
+
+
+    .middle .feeds .feed .foto .img-feed{
+        max-width: 99vw;
+    }
+
+    footer{
+        display: none;
+    }
+
+    
+}
+
+
+
+
+

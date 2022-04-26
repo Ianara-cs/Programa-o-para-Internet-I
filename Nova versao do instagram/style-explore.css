@@ -1,0 +1,12 @@
+.middle-explore{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 1rem;
+    
+}
+
+.img-explore{
+    width: 350px;
+    height: 250px;
+}
