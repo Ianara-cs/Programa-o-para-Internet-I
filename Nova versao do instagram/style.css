@@ -126,7 +126,7 @@ main .container .left .side-bar{
 .left .side-bar .menu-item{
     display: flex;
     align-items: center;
-    justify-content: center;
+    
     height: 4rem;
     cursor: pointer;
     transition: all 300ms ease;
@@ -348,6 +348,11 @@ footer{
 
     .left .side-bar .menu-item{
         width: 100%;
+        justify-content: center;
+    }
+
+    .left .side-bar .menu-item h3{
+        display: none;
     }
 
     .left .side-bar .menu-item:hover{
