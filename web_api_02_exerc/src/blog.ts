@@ -50,7 +50,7 @@ export class Microblog {
 
     delete (id: string): boolean {
         const index = this.posts.findIndex(post => id == post.id)
-        if(!index){
+        if(index === -1){
             return false
         }
         this.posts.splice(index, 1)
