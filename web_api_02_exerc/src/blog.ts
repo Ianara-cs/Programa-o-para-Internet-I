@@ -27,25 +27,26 @@ export class Microblog {
         return post
     }
 
-    update (id: string, text?: string, likes?: number) : Post | undefined {
-        const post = this.retrive(id)
-        if(post){
-            if (text === undefined && likes){
-                post.text = post.text
-                post.likes = likes
-            }else if (likes === undefined && text) {
-                post.text = text
-                post.likes = post.likes
+    update (id: string, likes?: number, text?: string) : Post | undefined {
+        const index = this.posts.findIndex(post => id == post.id)
+        if(index !== -1){   
+            if (text == undefined && likes){
+                this.posts[index].text = this.posts[index].text
+                this.posts[index].likes = likes
+                return this.posts[index]
+            }else if (likes == undefined && text) {
+                this.posts[index].text = text
+                this.posts[index].likes = this.posts[index].likes
+                return this.posts[index]
             }else if (text && likes){
-                post.text = text
-                post.likes = likes
-                return post
-            }else {
-                return undefined
+                this.posts[index].text = text
+                this.posts[index].likes = likes
+                return this.posts[index]
             }
-            
+        }else {
+            return undefined
+
         }
-        return undefined
     }
 
     delete (id: string): boolean {
