@@ -44,7 +44,7 @@ app.post('/posts', (req: Request, res: Response) => {
 app.put('/posts/:id', (req: Request, res: Response) => {
     const postId = req.params.id
     const {text, likes} = req.body
-    const updatePost = blog.update(postId, text, likes)
+    const updatePost = blog.update(postId, likes, text)
     if(!updatePost) {
         res.status(404).send('Não encontrado')
     }
@@ -64,8 +64,7 @@ app.patch('/posts/:id', (req: Request, res: Response) => {
 
 app.patch('/posts/:id/like', (req: Request, res: Response) => {
     const postId = req.params.id
-    const {likes} = req.body
-    const updatePost = blog.update(postId, likes)
+    const updatePost = blog.update(postId)
     if(!updatePost){
         res.status(404).send('Não encontrado');
     }

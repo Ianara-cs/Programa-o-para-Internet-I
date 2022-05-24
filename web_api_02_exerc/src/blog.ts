@@ -42,10 +42,12 @@ export class Microblog {
                 this.posts[index].text = text
                 this.posts[index].likes = likes
                 return this.posts[index]
+            }else if(text == undefined && likes == undefined){
+                this.posts[index].likes += 1
+                return this.posts[index]
             }
         }else {
             return undefined
-
         }
     }
 
