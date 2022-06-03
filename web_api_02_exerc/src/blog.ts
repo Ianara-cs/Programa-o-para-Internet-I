@@ -88,7 +88,7 @@ export class Microblog {
             querySnapshot.forEach((doc: any) => allPosts.push(doc.data()))
         }
 
-        if(page === undefined && lim === undefined && offs === undefined){
+        if(page === undefined && lim === undefined && offs === undefined && q === undefined){
             page = 1
         }
         if(page) {
